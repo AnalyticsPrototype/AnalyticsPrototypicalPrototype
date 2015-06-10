@@ -33,19 +33,14 @@ class JUNWebServices: NSObject {
     func GETAdCompletedInformation(requestCompletionHandler: (data: NSData) -> Void) {
         
         // Create the NSURL constant from the URL path String
-        let URLPath: String = String(format: "%@&timeframe=previous_%i_hours", kGETAdCompletedInformation, 3);
-        
-        let URL: NSURL = NSURL(string: URLPath)!;
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(string: String(format: "%@&timeframe=previous_%i_hours", kGETAdCompletedInformation, 7))!)
         
         // Create the NSURLSession constant
         let session: NSURLSession = NSURLSession.sharedSession();
         
         // Create the NSURLSessionDataTask constant
-        let task: NSURLSessionDataTask = session.dataTaskWithURL(URL, completionHandler: {(data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+        let task = session.dataTaskWithRequest(request){(data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             
-            print("Task completed")
-            
-            // If there is an error we print it out
             if error != nil {
                 
                 print("An error occurred while retrieving the Ad Completed JSON - \(error!.localizedDescription)");
@@ -53,10 +48,10 @@ class JUNWebServices: NSObject {
             }
             
             requestCompletionHandler(data: data!);
-        })!
+        }
         
         // The task constant is just an object with all these properties set
         // In order to actually make the web request, we need to call resume.
-        task.resume();
+        task!.resume();
     }
 }

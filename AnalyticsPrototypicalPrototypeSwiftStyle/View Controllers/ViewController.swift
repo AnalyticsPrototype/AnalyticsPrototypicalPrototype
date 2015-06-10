@@ -53,10 +53,9 @@ class ViewController: UIViewController {
                 
                 let JSON = try NSJSONSerialization.JSONObjectWithData(data, options: [])
                 
-                guard let JSONArray: NSArray = JSON["results"] as? NSArray else {
+                guard let JSONArray: NSArray = JSON["result"] as? NSArray else {
                     
                     throw JSONError.JSONArrayError
-                    
                 }
                 
                 var sum: NSInteger = 0
@@ -67,13 +66,11 @@ class ViewController: UIViewController {
                     guard let dictionary: NSDictionary = JSONArray[index] as? NSDictionary else {
                         
                         throw JSONError.JSONDictionaryError
-                        
                     }
                     
                     guard let number: NSNumber = dictionary["ad_provider_eCPM"] as? NSNumber else {
                         
                         throw JSONError.JSONDictionaryError
-                        
                     }
                     
                     sum += number.integerValue
@@ -81,27 +78,16 @@ class ViewController: UIViewController {
                 
                 averageeCPM = sum / JSONArray.count
                 
-                // Update the eCPM UILabel
-                self.averageeCPMLabel.text = "\(averageeCPM)"
+                // Update the eCPM UILabel back on the main thread
+                dispatch_async(dispatch_get_main_queue()) {
+                    
+                    self.averageeCPMLabel.text = "\(averageeCPM)"
+                }
                 
             } catch {
                 
                 print("An error has occurred parsing the JSON NSData.");
-                
             }
         }
-    }
-    
-    // mark -
-    // mark Helper Methods
-    // mark -
-
-//    func parseJSONData(data: NSData) -> NSDictionary {
-//        
-//        
-//    }
-    
-    func greet(name: String, day: String) -> String {
-        return "Hello \(name), today is \(day)."
     }
 }
