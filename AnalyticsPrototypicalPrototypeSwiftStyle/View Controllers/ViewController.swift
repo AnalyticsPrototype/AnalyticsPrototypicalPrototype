@@ -102,6 +102,8 @@ class ViewController: UIViewController {
         
         let datePickerView: UIDatePicker = UIDatePicker()
         
+        // We want the UIDatePicker to be accessible for UI Testing
+        datePickerView.accessibilityActivate()
         datePickerView.datePickerMode = UIDatePickerMode.Date
         
         sender.inputView = datePickerView
@@ -113,6 +115,8 @@ class ViewController: UIViewController {
         
         let datePickerView: UIDatePicker = UIDatePicker()
         
+        // We want the UIDatePicker to be accessible for UI Testing
+        datePickerView.accessibilityActivate()
         datePickerView.datePickerMode = UIDatePickerMode.Date
         
         sender.inputView = datePickerView
