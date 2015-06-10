@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0700"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "36A0E4B41B279D6F00A47D7C"
+               BuildableName = "AnalyticsPrototypicalPrototypeSwiftStyle.app"
+               BlueprintName = "AnalyticsPrototypicalPrototypeSwiftStyle"
+               ReferencedContainer = "container:AnalyticsPrototypicalPrototypeSwiftStyle.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "36A0E4C81B279D6F00A47D7C"
+               BuildableName = "AnalyticsPrototypicalPrototypeSwiftStyleTests.xctest"
+               BlueprintName = "AnalyticsPrototypicalPrototypeSwiftStyleTests"
+               ReferencedContainer = "container:AnalyticsPrototypicalPrototypeSwiftStyle.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "36A0E4D31B279D6F00A47D7C"
+               BuildableName = "AnalyticsPrototypicalPrototypeSwiftStyleUITests.xctest"
+               BlueprintName = "AnalyticsPrototypicalPrototypeSwiftStyleUITests"
+               ReferencedContainer = "container:AnalyticsPrototypicalPrototypeSwiftStyle.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "36A0E4B41B279D6F00A47D7C"
+            BuildableName = "AnalyticsPrototypicalPrototypeSwiftStyle.app"
+            BlueprintName = "AnalyticsPrototypicalPrototypeSwiftStyle"
+            ReferencedContainer = "container:AnalyticsPrototypicalPrototypeSwiftStyle.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "36A0E4B41B279D6F00A47D7C"
+            BuildableName = "AnalyticsPrototypicalPrototypeSwiftStyle.app"
+            BlueprintName = "AnalyticsPrototypicalPrototypeSwiftStyle"
+            ReferencedContainer = "container:AnalyticsPrototypicalPrototypeSwiftStyle.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "36A0E4B41B279D6F00A47D7C"
+            BuildableName = "AnalyticsPrototypicalPrototypeSwiftStyle.app"
+            BlueprintName = "AnalyticsPrototypicalPrototypeSwiftStyle"
+            ReferencedContainer = "container:AnalyticsPrototypicalPrototypeSwiftStyle.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
