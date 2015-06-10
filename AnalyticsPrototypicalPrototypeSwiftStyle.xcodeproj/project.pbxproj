@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36A0E4B91B279D6F00A47D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4B81B279D6F00A47D7C /* AppDelegate.swift */; };
-		36A0E4BB1B279D6F00A47D7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4BA1B279D6F00A47D7C /* ViewController.swift */; };
 		36A0E4BE1B279D6F00A47D7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A0E4BC1B279D6F00A47D7C /* Main.storyboard */; };
 		36A0E4C01B279D6F00A47D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A0E4BF1B279D6F00A47D7C /* Assets.xcassets */; };
 		36A0E4C31B279D6F00A47D7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A0E4C11B279D6F00A47D7C /* LaunchScreen.storyboard */; };
 		36A0E4CE1B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4CD1B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleTests.swift */; };
 		36A0E4D91B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4D81B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleUITests.swift */; };
+		36A0E4EB1B279DE700A47D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4EA1B279DE700A47D7C /* AppDelegate.swift */; };
+		36A0E4ED1B279DF200A47D7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4EC1B279DF200A47D7C /* ViewController.swift */; };
+		36A0E4F11B279E6E00A47D7C /* JUNWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4F01B279E6E00A47D7C /* JUNWebServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,6 @@
 
 /* Begin PBXFileReference section */
 		36A0E4B51B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsPrototypicalPrototypeSwiftStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		36A0E4B81B279D6F00A47D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36A0E4BA1B279D6F00A47D7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36A0E4BD1B279D6F00A47D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36A0E4BF1B279D6F00A47D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36A0E4C21B279D6F00A47D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,10 @@
 		36A0E4D41B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyticsPrototypicalPrototypeSwiftStyleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A0E4D81B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsPrototypicalPrototypeSwiftStyleUITests.swift; sourceTree = "<group>"; };
 		36A0E4DA1B279D6F00A47D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36A0E4E91B279DE600A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnalyticsPrototypicalPrototypeSwiftStyle-Bridging-Header.h"; sourceTree = "<group>"; };
+		36A0E4EA1B279DE700A47D7C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Application Delegate/AppDelegate.swift"; sourceTree = "<group>"; };
+		36A0E4EC1B279DF200A47D7C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "View Controllers/ViewController.swift"; sourceTree = "<group>"; };
+		36A0E4F01B279E6E00A47D7C /* JUNWebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JUNWebServices.swift; path = "Web Service API/JUNWebServices.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +100,12 @@
 		36A0E4B71B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyle */ = {
 			isa = PBXGroup;
 			children = (
-				36A0E4B81B279D6F00A47D7C /* AppDelegate.swift */,
-				36A0E4BA1B279D6F00A47D7C /* ViewController.swift */,
-				36A0E4BC1B279D6F00A47D7C /* Main.storyboard */,
+				36A0E4E81B279DA100A47D7C /* Application Delegate */,
+				36A0E4EF1B279E2400A47D7C /* Model */,
+				36A0E4E71B279D9500A47D7C /* View Controllers */,
+				36A0E4EE1B279E0800A47D7C /* Web Service API */,
+				36A0E4E61B279D8300A47D7C /* Storyboards */,
 				36A0E4BF1B279D6F00A47D7C /* Assets.xcassets */,
-				36A0E4C11B279D6F00A47D7C /* LaunchScreen.storyboard */,
 				36A0E4C41B279D6F00A47D7C /* Info.plist */,
 			);
 			path = AnalyticsPrototypicalPrototypeSwiftStyle;
@@ -123,6 +127,47 @@
 				36A0E4DA1B279D6F00A47D7C /* Info.plist */,
 			);
 			path = AnalyticsPrototypicalPrototypeSwiftStyleUITests;
+			sourceTree = "<group>";
+		};
+		36A0E4E61B279D8300A47D7C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				36A0E4BC1B279D6F00A47D7C /* Main.storyboard */,
+				36A0E4C11B279D6F00A47D7C /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		36A0E4E71B279D9500A47D7C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				36A0E4EC1B279DF200A47D7C /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		36A0E4E81B279DA100A47D7C /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				36A0E4EA1B279DE700A47D7C /* AppDelegate.swift */,
+				36A0E4E91B279DE600A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyle-Bridging-Header.h */,
+			);
+			name = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		36A0E4EE1B279E0800A47D7C /* Web Service API */ = {
+			isa = PBXGroup;
+			children = (
+				36A0E4F01B279E6E00A47D7C /* JUNWebServices.swift */,
+			);
+			name = "Web Service API";
+			sourceTree = "<group>";
+		};
+		36A0E4EF1B279E2400A47D7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +232,7 @@
 		36A0E4AD1B279D6F00A47D7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = JunGroup;
 				TargetAttributes = {
@@ -255,8 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A0E4BB1B279D6F00A47D7C /* ViewController.swift in Sources */,
-				36A0E4B91B279D6F00A47D7C /* AppDelegate.swift in Sources */,
+				36A0E4F11B279E6E00A47D7C /* JUNWebServices.swift in Sources */,
+				36A0E4ED1B279DF200A47D7C /* ViewController.swift in Sources */,
+				36A0E4EB1B279DE700A47D7C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +445,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AnalyticsPrototypicalPrototypeSwiftStyle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jungroup.www.AnalyticsPrototypicalPrototypeSwiftStyle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnalyticsPrototypicalPrototypeSwiftStyle/AnalyticsPrototypicalPrototypeSwiftStyle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -409,10 +459,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AnalyticsPrototypicalPrototypeSwiftStyle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jungroup.www.AnalyticsPrototypicalPrototypeSwiftStyle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnalyticsPrototypicalPrototypeSwiftStyle/AnalyticsPrototypicalPrototypeSwiftStyle-Bridging-Header.h";
 			};
 			name = Release;
 		};
