@@ -6,30 +6,58 @@
 //  Copyright © 2015 JunGroup. All rights reserved.
 //
 
-import Foundation
 import XCTest
+import Foundation
 
 class AnalyticsPrototypicalPrototypeSwiftStyleUITests: XCTestCase {
         
     override func setUp() {
-        super.setUp()
         
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
+        
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFetchInformationButton() {
+        
+        XCUIApplication().buttons["Fetch Information"].tap()
+
+        // We expect the the Average eCPM UILabel to be updated with a value
+        XCTAssertNotNil(XCUIApplication().label);
     }
     
+    func testStartDateTextField() {
+        
+        let app = XCUIApplication()
+        
+        app.textFields["Start Date"].tap()
+        
+        app.pickerWheels["June"].tap()
+        app.pickerWheels["9"].tap()
+        app.pickerWheels["2015"].tap()
+        
+//        XCTAssertEqual(ViewController.startDateTextField.text, "", "We expect the Start Date UITextField to be equal to 'Jun 9, 2015'.")
+    }
+    
+    func testEndDateTextField() {
+        
+        let app = XCUIApplication()
+        
+        app.textFields["End Date"].tap()
+        
+        app.pickerWheels["June"].tap()
+        app.pickerWheels["9"].tap()
+        app.pickerWheels["2015"].tap()
+        
+//        XCTAssertEqual(ViewController.endDateTextField.text, "", "We expect the Start Date UITextField to be equal to 'Jun 9, 2015'.")
+    }
 }

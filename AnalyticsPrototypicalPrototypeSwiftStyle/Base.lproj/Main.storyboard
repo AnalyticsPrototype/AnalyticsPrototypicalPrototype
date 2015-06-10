@@ -20,11 +20,17 @@
                                 <rect key="frame" x="16" y="20" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onStartDateBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="ZXy-Ut-DIr"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b4k-MC-Gl1">
                                 <rect key="frame" x="16" y="58" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onEndDateBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="bJe-OF-eLP"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Average eCPM:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFF-JS-0aU">
                                 <rect key="frame" x="16" y="148" width="120" height="21"/>
@@ -53,11 +59,13 @@
                     </view>
                     <connections>
                         <outlet property="averageeCPMLabel" destination="b9c-Fg-FLs" id="cGQ-yx-OyQ"/>
+                        <outlet property="endDateTextField" destination="b4k-MC-Gl1" id="udS-u4-xU7"/>
+                        <outlet property="startDateTextField" destination="WU2-8t-86c" id="G6F-o2-HSy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="455" y="389"/>
+            <point key="canvasLocation" x="256" y="380"/>
         </scene>
     </scenes>
 </document>

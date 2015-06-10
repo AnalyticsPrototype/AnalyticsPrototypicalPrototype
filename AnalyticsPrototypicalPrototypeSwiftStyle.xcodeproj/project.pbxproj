@@ -105,6 +105,7 @@
 				36A0E4E71B279D9500A47D7C /* View Controllers */,
 				36A0E4EE1B279E0800A47D7C /* Web Service API */,
 				36A0E4E61B279D8300A47D7C /* Storyboards */,
+				36B05E071B27E8EC00FB3376 /* Bridging Header */,
 				36A0E4BF1B279D6F00A47D7C /* Assets.xcassets */,
 				36A0E4C41B279D6F00A47D7C /* Info.plist */,
 			);
@@ -150,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				36A0E4EA1B279DE700A47D7C /* AppDelegate.swift */,
-				36A0E4E91B279DE600A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyle-Bridging-Header.h */,
 			);
 			name = "Application Delegate";
 			sourceTree = "<group>";
@@ -168,6 +168,14 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		36B05E071B27E8EC00FB3376 /* Bridging Header */ = {
+			isa = PBXGroup;
+			children = (
+				36A0E4E91B279DE600A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyle-Bridging-Header.h */,
+			);
+			name = "Bridging Header";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -535,6 +543,7 @@
 				36A0E4DF1B279D6F00A47D7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36A0E4E01B279D6F00A47D7C /* Build configuration list for PBXNativeTarget "AnalyticsPrototypicalPrototypeSwiftStyleTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +552,7 @@
 				36A0E4E21B279D6F00A47D7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36A0E4E31B279D6F00A47D7C /* Build configuration list for PBXNativeTarget "AnalyticsPrototypicalPrototypeSwiftStyleUITests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +561,7 @@
 				36A0E4E51B279D6F00A47D7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

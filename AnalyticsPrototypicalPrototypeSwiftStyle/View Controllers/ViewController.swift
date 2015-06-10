@@ -27,6 +27,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var averageeCPMLabel: UILabel!
     
     // mark -
+    // mark UITextField Properties
+    // mark -
+    
+    @IBOutlet weak var startDateTextField: UITextField!
+    @IBOutlet weak var endDateTextField: UITextField!
+    
+    // mark -
     // mark View Life Cycle
     // mark -
     
@@ -89,5 +96,49 @@ class ViewController: UIViewController {
                 print("An error has occurred parsing the JSON NSData.");
             }
         }
+    }
+    
+    @IBAction func onStartDateBeginEditing(sender: UITextField) {
+        
+        let datePickerView: UIDatePicker = UIDatePicker()
+        
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        
+        sender.inputView = datePickerView
+        
+        datePickerView.addTarget(self, action: Selector("startDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    @IBAction func onEndDateBeginEditing(sender: UITextField) {
+        
+        let datePickerView: UIDatePicker = UIDatePicker()
+        
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        
+        sender.inputView = datePickerView
+        
+        datePickerView.addTarget(self, action: Selector("endDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    // mark -
+    // mark Selector Methods
+    // mark -
+    
+    func startDatePickerValueChanged(sender: UIDatePicker) {
+        
+        let dateformatter = NSDateFormatter()
+        
+        dateformatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        
+        self.startDateTextField.text = dateformatter.stringFromDate(sender.date)
+    }
+    
+    func endDatePickerValueChanged(sender: UIDatePicker) {
+        
+        let dateformatter = NSDateFormatter()
+        
+        dateformatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        
+        self.endDateTextField.text = dateformatter.stringFromDate(sender.date)
     }
 }
