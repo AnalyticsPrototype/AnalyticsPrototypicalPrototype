@@ -3,9 +3,9 @@
 
 target 'AnalyticsPrototypicalPrototypeSwiftStyle' do
 
-pod 'OHHTTPStubs'
-
 end
+
+pod 'OHHTTPStubs'
 
 target 'AnalyticsPrototypicalPrototypeSwiftStyleTests' do
 
