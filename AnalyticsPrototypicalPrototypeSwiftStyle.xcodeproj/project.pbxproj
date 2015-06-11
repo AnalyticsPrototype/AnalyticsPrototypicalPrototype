@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		124E190C50E240A48B165C95 /* libPods-AnalyticsPrototypicalPrototypeSwiftStyleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892367BB96DCB91EDEFA2B0 /* libPods-AnalyticsPrototypicalPrototypeSwiftStyleTests.a */; };
 		36A0E4BE1B279D6F00A47D7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A0E4BC1B279D6F00A47D7C /* Main.storyboard */; };
 		36A0E4C01B279D6F00A47D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A0E4BF1B279D6F00A47D7C /* Assets.xcassets */; };
 		36A0E4C31B279D6F00A47D7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A0E4C11B279D6F00A47D7C /* LaunchScreen.storyboard */; };
@@ -16,7 +15,6 @@
 		36A0E4EB1B279DE700A47D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4EA1B279DE700A47D7C /* AppDelegate.swift */; };
 		36A0E4ED1B279DF200A47D7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4EC1B279DF200A47D7C /* ViewController.swift */; };
 		36A0E4F11B279E6E00A47D7C /* JUNWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4F01B279E6E00A47D7C /* JUNWebServices.swift */; };
-		3F6BFAC642A815446A1221C4 /* libPods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F21EEE50F2F503336830959 /* libPods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2892367BB96DCB91EDEFA2B0 /* libPods-AnalyticsPrototypicalPrototypeSwiftStyleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnalyticsPrototypicalPrototypeSwiftStyleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F21EEE50F2F503336830959 /* libPods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A0E4B51B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsPrototypicalPrototypeSwiftStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A0E4BD1B279D6F00A47D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36A0E4BF1B279D6F00A47D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,10 +50,6 @@
 		36A0E4EA1B279DE700A47D7C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Application Delegate/AppDelegate.swift"; sourceTree = "<group>"; };
 		36A0E4EC1B279DF200A47D7C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "View Controllers/ViewController.swift"; sourceTree = "<group>"; };
 		36A0E4F01B279E6E00A47D7C /* JUNWebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JUNWebServices.swift; path = "Web Service API/JUNWebServices.swift"; sourceTree = "<group>"; };
-		53747FDC06620F186ACD9BA4 /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests/Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		84139A4DFA200C4F35C3A33F /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests/Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A3E1D7E11EF9DA8CEE10FC73 /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests/Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F908FED3F479F057F81BA4E1 /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests/Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124E190C50E240A48B165C95 /* libPods-AnalyticsPrototypicalPrototypeSwiftStyleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6BFAC642A815446A1221C4 /* libPods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +84,6 @@
 				36A0E4CC1B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleTests */,
 				36A0E4D71B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleUITests */,
 				36A0E4B61B279D6F00A47D7C /* Products */,
-				C173CE881FCBEA7E2865013E /* Pods */,
 				932E96C3622E47E7A8333B20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -193,21 +182,8 @@
 		932E96C3622E47E7A8333B20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2892367BB96DCB91EDEFA2B0 /* libPods-AnalyticsPrototypicalPrototypeSwiftStyleTests.a */,
-				2F21EEE50F2F503336830959 /* libPods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C173CE881FCBEA7E2865013E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				53747FDC06620F186ACD9BA4 /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests.debug.xcconfig */,
-				F908FED3F479F057F81BA4E1 /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests.release.xcconfig */,
-				84139A4DFA200C4F35C3A33F /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.debug.xcconfig */,
-				A3E1D7E11EF9DA8CEE10FC73 /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -579,7 +555,6 @@
 		};
 		36A0E4E11B279D6F00A47D7C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53747FDC06620F186ACD9BA4 /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AnalyticsPrototypicalPrototypeSwiftStyleTests/Info.plist;
@@ -592,7 +567,6 @@
 		};
 		36A0E4E21B279D6F00A47D7C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F908FED3F479F057F81BA4E1 /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AnalyticsPrototypicalPrototypeSwiftStyleTests/Info.plist;
@@ -605,7 +579,6 @@
 		};
 		36A0E4E41B279D6F00A47D7C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84139A4DFA200C4F35C3A33F /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = AnalyticsPrototypicalPrototypeSwiftStyleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -618,7 +591,6 @@
 		};
 		36A0E4E51B279D6F00A47D7C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3E1D7E11EF9DA8CEE10FC73 /* Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = AnalyticsPrototypicalPrototypeSwiftStyleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
