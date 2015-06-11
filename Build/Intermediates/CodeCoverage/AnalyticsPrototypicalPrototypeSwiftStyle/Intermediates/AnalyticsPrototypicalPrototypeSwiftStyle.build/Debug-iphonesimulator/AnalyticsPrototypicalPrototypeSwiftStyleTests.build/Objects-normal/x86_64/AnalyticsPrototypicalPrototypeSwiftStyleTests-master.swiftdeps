@@ -1,4 +1,4 @@
 version: "Apple Swift version 2.0 (swiftlang-700.0.38.1 clang-700.0.53)"
-options: "2ecf46287a681c61b68387bc59f6f049"
+options: "7405fdcc6c14830af12191e9d8309eb9"
 inputs: 
-- "/Users/krafferty/Documents/JunGroup/AnalyticsPrototypicalPrototypeSwiftStyle/AnalyticsPrototypicalPrototypeSwiftStyleTests/AnalyticsPrototypicalPrototypeSwiftStyleTests.swift"
+- "/Users/krafferty/Documents/JunGroup/AnalyticsPrototypicalPrototype/AnalyticsPrototypicalPrototypeSwiftStyleTests/AnalyticsPrototypicalPrototypeSwiftStyleTests.swift"

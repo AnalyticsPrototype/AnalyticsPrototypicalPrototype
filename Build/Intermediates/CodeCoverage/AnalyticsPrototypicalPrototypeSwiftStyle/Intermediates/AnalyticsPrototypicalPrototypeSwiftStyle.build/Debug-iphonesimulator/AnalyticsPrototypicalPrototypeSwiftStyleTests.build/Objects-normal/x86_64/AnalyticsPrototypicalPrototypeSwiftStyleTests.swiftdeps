@@ -11,16 +11,16 @@ class-members:
 top-level:
 - "XCTestCase"
 member-access:
-- "CSo6XCTest"
 - !private "C45AnalyticsPrototypicalPrototypeSwiftStyleTests45AnalyticsPrototypicalPrototypeSwiftStyleTests"
-- "CSo10XCTestCase"
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- "CSo8NSObject"
-- "PSs8Hashable"
-- "PSs23CustomStringConvertible"
-- "PSo16NSObjectProtocol"
 - "PSs9Equatable"
+- "PSs11CVarArgType"
+- "CSo10XCTestCase"
+- "CSo6XCTest"
+- "PSo16NSObjectProtocol"
+- "PSs8Hashable"
+- "PSs9AnyObject"
+- "PSs23CustomStringConvertible"
+- "CSo8NSObject"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

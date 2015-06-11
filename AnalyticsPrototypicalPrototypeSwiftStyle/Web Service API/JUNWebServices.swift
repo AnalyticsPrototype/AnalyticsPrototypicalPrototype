@@ -50,7 +50,7 @@ class JUNWebServices: NSObject {
         }
         
         // The task constant is just an object with all these properties set
-        // In order to actually make the web request, we need to call resume.
+        // In order to actually make the web request we need to call resume.
         task!.resume();
     }
 }
