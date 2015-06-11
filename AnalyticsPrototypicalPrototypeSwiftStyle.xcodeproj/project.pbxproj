@@ -84,7 +84,6 @@
 				36A0E4CC1B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleTests */,
 				36A0E4D71B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleUITests */,
 				36A0E4B61B279D6F00A47D7C /* Products */,
-				932E96C3622E47E7A8333B20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,13 +178,6 @@
 			name = "Bridging Header";
 			sourceTree = "<group>";
 		};
-		932E96C3622E47E7A8333B20 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,11 +202,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36A0E4E01B279D6F00A47D7C /* Build configuration list for PBXNativeTarget "AnalyticsPrototypicalPrototypeSwiftStyleTests" */;
 			buildPhases = (
-				836A3886F2EC9270DB564945 /* Check Pods Manifest.lock */,
 				36A0E4C51B279D6F00A47D7C /* Sources */,
 				36A0E4C61B279D6F00A47D7C /* Frameworks */,
 				36A0E4C71B279D6F00A47D7C /* Resources */,
-				A02F744BD65DF4A32D9AD630 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,11 +220,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36A0E4E31B279D6F00A47D7C /* Build configuration list for PBXNativeTarget "AnalyticsPrototypicalPrototypeSwiftStyleUITests" */;
 			buildPhases = (
-				46FA88696F50FE420D124328 /* Check Pods Manifest.lock */,
 				36A0E4D01B279D6F00A47D7C /* Sources */,
 				36A0E4D11B279D6F00A47D7C /* Frameworks */,
 				36A0E4D21B279D6F00A47D7C /* Resources */,
-				C158D708EF12868DEF324EAD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,69 +303,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		46FA88696F50FE420D124328 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		836A3886F2EC9270DB564945 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A02F744BD65DF4A32D9AD630 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests/Pods-AnalyticsPrototypicalPrototypeSwiftStyleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C158D708EF12868DEF324EAD /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests/Pods-AnalyticsPrototypicalPrototypeSwiftStyleUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36A0E4B11B279D6F00A47D7C /* Sources */ = {
