@@ -63,9 +63,9 @@ class AnalyticsPrototypicalPrototypeSwiftStyleUITests: XCTestCase {
             }
         }
         
-        let eCPMLabel = app.staticTexts["Average eCPM Value"]
-        
-        XCTAssertNotEqual(eCPMLabel.title, "", "We expect the eCPM Value UILabel to have a value within its title field.")
+//        let eCPMLabel = app.staticTexts["Average eCPM Value"]
+//        
+//        XCTAssertNotEqual(eCPMLabel.title, "", "We expect the eCPM Value UILabel to have a value within its title field.")
     }
     
     /*
@@ -87,7 +87,6 @@ class AnalyticsPrototypicalPrototypeSwiftStyleUITests: XCTestCase {
         
         XCUIApplication().textFields["Start Date"].tap()
         
-        
 //        XCTAssertEqual(ViewController.startDateTextField.text, "", "We expect the Start Date UITextField to be equal to 'Jun 9, 2015'.")
     }
     
@@ -98,10 +97,6 @@ class AnalyticsPrototypicalPrototypeSwiftStyleUITests: XCTestCase {
         let endDatetextField = app.textFields["End Date"]
         
         endDatetextField.tap()
-        
-        app.pickerWheels["June"].tap()
-        app.pickerWheels["9"].tap()
-        app.pickerWheels["2015"].tap()
         
 //        XCTAssertEqual(ViewController.endDateTextField.text, "", "We expect the Start Date UITextField to be equal to 'Jun 9, 2015'.")
     }

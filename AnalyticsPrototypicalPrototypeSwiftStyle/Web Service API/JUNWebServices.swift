@@ -44,7 +44,6 @@ class JUNWebServices: NSObject {
             if error != nil {
                 
                 print("An error occurred while retrieving the Ad Completed JSON - \(error!.localizedDescription)");
-                
             }
             
             requestCompletionHandler(data: data!);
