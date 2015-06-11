@@ -3,16 +3,14 @@
 
 target 'AnalyticsPrototypicalPrototypeSwiftStyle' do
 
+pod 'OHHTTPStubs'
+
 end
 
 target 'AnalyticsPrototypicalPrototypeSwiftStyleTests' do
 
-pod 'OHHTTPStubs'
-
 end
 
 target 'AnalyticsPrototypicalPrototypeSwiftStyleUITests' do
-
-pod 'OHHTTPStubs'
 
 end
