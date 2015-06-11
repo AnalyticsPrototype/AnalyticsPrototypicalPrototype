@@ -30,7 +30,7 @@ class JUNWebServices: NSObject {
     *
     *  A callback handler will provide the serialized JSON data returned from Keen in an NSDictionary format
     */
-    func GETAdCompletedInformation(requestCompletionHandler: (data: NSData) -> Void) {
+    func GETAdCompletedInformation(requestCompletionHandler: (data: NSData) -> Void){
         
         // Create the NSURL constant from the URL path String
         let request: NSURLRequest = NSURLRequest(URL: NSURL(string: String(format: "%@&timeframe=previous_%i_hours", kGETAdCompletedInformation, 7))!)
