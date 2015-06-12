@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		362024EC1B2B78A10066B748 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362024EB1B2B78A10066B748 /* OHHTTPStubs.framework */; };
-		362024EE1B2B79940066B748 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362024EB1B2B78A10066B748 /* OHHTTPStubs.framework */; };
+		3661CAFE1B2B8386006EF0F8 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3661CAFD1B2B8386006EF0F8 /* OHHTTPStubs.framework */; };
 		36A0E4BE1B279D6F00A47D7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A0E4BC1B279D6F00A47D7C /* Main.storyboard */; };
 		36A0E4C01B279D6F00A47D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A0E4BF1B279D6F00A47D7C /* Assets.xcassets */; };
 		36A0E4C31B279D6F00A47D7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A0E4C11B279D6F00A47D7C /* LaunchScreen.storyboard */; };
@@ -37,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		362024EB1B2B78A10066B748 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		3661CAFD1B2B8386006EF0F8 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		36A0E4B51B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsPrototypicalPrototypeSwiftStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A0E4BD1B279D6F00A47D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36A0E4BF1B279D6F00A47D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				362024EC1B2B78A10066B748 /* OHHTTPStubs.framework in Frameworks */,
+				3661CAFE1B2B8386006EF0F8 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				362024EE1B2B79940066B748 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +83,7 @@
 		362024E61B2B6CC30066B748 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				362024EB1B2B78A10066B748 /* OHHTTPStubs.framework */,
+				3661CAFD1B2B8386006EF0F8 /* OHHTTPStubs.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,7 +217,6 @@
 				36A0E4C51B279D6F00A47D7C /* Sources */,
 				36A0E4C61B279D6F00A47D7C /* Frameworks */,
 				36A0E4C71B279D6F00A47D7C /* Resources */,
-				362024ED1B2B78DD0066B748 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -238,7 +235,6 @@
 				36A0E4D01B279D6F00A47D7C /* Sources */,
 				36A0E4D11B279D6F00A47D7C /* Frameworks */,
 				36A0E4D21B279D6F00A47D7C /* Resources */,
-				362024EF1B2B799D0066B748 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -319,37 +315,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		362024ED1B2B78DD0066B748 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)//Carthage/Build/iOS/OHHTTPStubs.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		362024EF1B2B799D0066B748 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)//Carthage/Build/iOS/OHHTTPStubs.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36A0E4B11B279D6F00A47D7C /* Sources */ = {
