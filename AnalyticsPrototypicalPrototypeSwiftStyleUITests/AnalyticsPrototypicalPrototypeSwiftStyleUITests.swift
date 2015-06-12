@@ -40,28 +40,18 @@ class AnalyticsPrototypicalPrototypeSwiftStyleUITests: XCTestCase {
      *       adding an XCTestExpectation but I cannot get that to work.
      *       Not sure where to go from here since my questions was not
      *       answered and other developers are having the same issue.
+     *       Perhaps using OHHTTPStubs to return a server response
+     *       could work in this case.
      *
      */
     
     func testFetchInformationButton() {
-        
-        let expectation = expectationWithDescription("Wait for the asynchronous request to return.")
         
         let app = XCUIApplication()
         
         let fetchInformationButton = app.buttons["Fetch Information Button"]
         
         fetchInformationButton.tap()
-        
-        expectation.fulfill()
-        
-        waitForExpectationsWithTimeout(10) { (error) in
-            
-            if error != nil {
-                
-                print("Expectation error has been received: \(error?.localizedDescription)")
-            }
-        }
         
 //        let eCPMLabel = app.staticTexts["Average eCPM Value"]
 //        
@@ -70,10 +60,9 @@ class AnalyticsPrototypicalPrototypeSwiftStyleUITests: XCTestCase {
     
     /*
      *
-     * NOTE: All three Apple Engineers laughed and said UIDatePicker is tricky.
-     *       They seemed to try to avoid the question. I would like to say that
-     *       the Recording feature does not even pick up anything when scrolling
-     *        the date options. You have to tap on the dates instead.
+     * NOTE: All three Apple Engineers and said UIDatePicker is tricky.
+     *       Note that the Recording feature does not pick up anything when
+     *       scrolling the date options. You have to tap on the dates instead.
      *
      */
     

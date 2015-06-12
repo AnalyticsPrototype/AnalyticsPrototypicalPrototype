@@ -7,14 +7,13 @@
 //
 
 import XCTest
+import OHHTTPStubs
 
 class AnalyticsPrototypicalPrototypeSwiftStyleTests: XCTestCase {
     
     override func setUp() {
         
         super.setUp()
-        
-        
     }
     
     override func tearDown() {
@@ -24,15 +23,20 @@ class AnalyticsPrototypicalPrototypeSwiftStyleTests: XCTestCase {
     
     func testExample() {
         
-        
-    }
-    
-    func testPerformanceExample() {
-        
-        // This is an example of a performance test case.
-        self.measureBlock() {
+        OHHTTPStubs.stubRequestsPassingTest({$0.URL!.host == "mywebservice.com"}) { _ in
             
+            let obj = ["key1": "value1", "key2":["value2A","value2B"]]
             
+            return OHHTTPStubsResponse(JSONObject: obj, statusCode: 200, headers: nil)
         }
     }
+    
+//    func testPerformanceExample() {
+//        
+//        // This is an example of a performance test case.
+//        self.measureBlock() {
+//            
+//            
+//        }
+//    }
 }
