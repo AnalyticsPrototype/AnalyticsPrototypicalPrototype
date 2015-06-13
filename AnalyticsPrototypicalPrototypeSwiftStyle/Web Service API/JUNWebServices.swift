@@ -33,7 +33,7 @@ class JUNWebServices: NSObject {
     func GETAdCompletedInformation(requestCompletionHandler: (data: NSData) -> Void) {
         
         // Create the NSURL constant from the URL path String
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(string: String(format: "%@&timeframe=previous_%i_hours", kGETAdCompletedInformation, 7))!)
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(string: String(format: "%@&timeframe=previous_%i_hours", kGETAdCompletedInformation, 1))!)
         
         // Create the NSURLSession constant
         let session: NSURLSession = NSURLSession.sharedSession();

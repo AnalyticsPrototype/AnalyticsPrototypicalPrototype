@@ -21,13 +21,25 @@ class AnalyticsPrototypicalPrototypeSwiftStyleTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testParsingProperJSON() {
         
         OHHTTPStubs.stubRequestsPassingTest({$0.URL!.host == "mywebservice.com"}) { _ in
             
-            let obj = ["key1": "value1", "key2":["value2A","value2B"]]
+            return OHHTTPStubsResponse(fileAtPath:OHPathForFile("ad_completedJSON.json", self.dynamicType)!, statusCode:200, headers:["Content-Type":"application/json"])
+        }
+        
+        let expectation = expectationWithDescription("We expect the stubbed proper JSON to be parsed correctly.")
+        
+        ViewController().retrieveAdCompletedInformation()
+        
+        expectation.fulfill()
+        
+        waitForExpectationsWithTimeout(10) { (error) in
             
-            return OHHTTPStubsResponse(JSONObject: obj, statusCode: 200, headers: nil)
+            if error != nil {
+                
+                print("testParsingProperJSON expectation ERROR - \(error?.localizedDescription)")
+            }
         }
     }
     

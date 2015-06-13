@@ -1,0 +1,236 @@
+{
+    "result": [
+        {
+            "virtual_currency_awarded": 10,
+            "app_name": "fav_app",
+            "virtual_currency_reward_max": 9223372036854776000,
+            "app_id": 596930727,
+            "ad_provider_eCPM": 20,
+            "device_type": "iPhone Simulator",
+            "generated_config": {
+                "appConfigRefreshInterval": 0,
+                "appName": "fav_app",
+                "analyticsConfiguration": {
+                    "analyticsPostUrl": "https://api.keen.io/3.0/projects/550b015646f9a745baaab265",
+                    "analyticsWriteKey": "8f1c4831666e4bdc64b81bf430365590ebc15c73ea00bc3e9d61e8b7b3918b7a3728892e625ff34b77a1a86d7abd42c6c481870f92713a107061e4cc9f0c7a4872f1ac1c90e01644ed5281fcc92d7914634327c23b9a2bcc28c808b338265c32ce730c52f93b78275b36432ab3a4cf22"
+                },
+                "distributorName": "jun group",
+                "appID": 596930727,
+                "generationNumber": 38,
+                "logFullConfig": true,
+                "errorReportingConfiguration": {
+                    "errorReportingPostUrl": "https://api.keen.io/3.0/projects/550b015646f9a745baaab265",
+                    "errorReportingWriteKey": "8f1c4831666e4bdc64b81bf430365590ebc15c73ea00bc3e9d61e8b7b3918b7a3728892e625ff34b77a1a86d7abd42c6c481870f92713a107061e4cc9f0c7a4872f1ac1c90e01644ed5281fcc92d7914634327c23b9a2bcc28c808b338265c32ce730c52f93b78275b36432ab3a4cf22"
+                },
+                "rewardTimeout": 10,
+                "virtualCurrency": {
+                    "roundUp": true,
+                    "exchangeRate": 100,
+                    "rewardMin": 10,
+                    "rewardMax": 9223372036854776000,
+                    "name": "gold"
+                },
+                "canShowAdTimeout": 10,
+                "distributorID": 354504053,
+                "adProviderConfigurations": [
+                    {
+                        "providerName": "HyprMarketplace",
+                        "providerID": 2,
+                        "eCPM": 20,
+                        "distributorID": "10000169",
+                        "sdkBlacklistRegex": ".^",
+                        "propertyID": "fav_app"
+                    }
+                ]
+            },
+            "connection_type": "WIFI",
+            "device_unique_id": "F7AA3159-9306-4761-B54E-A2E7A188C3BE",
+            "ad_provider_id": 2,
+            "virtual_currency_reward_min": 10,
+            "virtual_currency_round_up": true,
+            "sdk_version": 1,
+            "platform_version": "8.3",
+            "platform": "iPhone OS",
+            "ad_provider_sdk_version": "35",
+            "ip_geo_info": {
+                "province": null,
+                "city": null,
+                "postal_code": null,
+                "continent": "North America",
+                "country": "United States"
+            },
+            "ad_provider_name": "HyprMarketplace",
+            "adapter_api_version": 1,
+            "ad_provider_adapter_version": 1,
+            "device_locale": "en",
+            "virtual_currency_name": "gold",
+            "virtual_currency_exchange_rate": 100,
+            "is_production": false,
+            "bundle_id": "com.jungroup.SampleApp",
+            "config_from_server": {
+                "appConfigRefreshInterval": 0,
+                "appName": "fav_app",
+                "analyticsConfiguration": {
+                    "analyticsPostUrl": "https://api.keen.io/3.0/projects/550b015646f9a745baaab265",
+                    "analyticsWriteKey": "8f1c4831666e4bdc64b81bf430365590ebc15c73ea00bc3e9d61e8b7b3918b7a3728892e625ff34b77a1a86d7abd42c6c481870f92713a107061e4cc9f0c7a4872f1ac1c90e01644ed5281fcc92d7914634327c23b9a2bcc28c808b338265c32ce730c52f93b78275b36432ab3a4cf22"
+                },
+                "distributorName": "jun group",
+                "canShowAdTimeout": 10,
+                "generationNumber": 38,
+                "logFullConfig": true,
+                "paused": false,
+                "errorReportingConfiguration": {
+                    "errorReportingPostUrl": "https://api.keen.io/3.0/projects/550b015646f9a745baaab265",
+                    "errorReportingWriteKey": "8f1c4831666e4bdc64b81bf430365590ebc15c73ea00bc3e9d61e8b7b3918b7a3728892e625ff34b77a1a86d7abd42c6c481870f92713a107061e4cc9f0c7a4872f1ac1c90e01644ed5281fcc92d7914634327c23b9a2bcc28c808b338265c32ce730c52f93b78275b36432ab3a4cf22"
+                },
+                "rewardTimeout": 10,
+                "adProviderBelowRewardThreshold": [],
+                "virtualCurrency": {
+                    "roundUp": true,
+                    "exchangeRate": 100,
+                    "rewardMin": 10,
+                    "rewardMax": null,
+                    "name": "gold"
+                },
+                "appID": 596930727,
+                "distributorID": 354504053,
+                "adProviderConfigurations": [
+                    {
+                        "providerName": "HyprMarketplace",
+                        "providerID": 2,
+                        "eCPM": 20,
+                        "distributorID": "10000169",
+                        "sdkBlacklistRegex": ".^",
+                        "propertyID": "fav_app"
+                    }
+                ],
+                "testMode": false
+            },
+            "ip_address": "69.74.2.58",
+            "distributor_name": "jun group",
+            "generation_number": 38,
+            "keen": {
+                "timestamp": "2015-06-12T21:12:14.138Z",
+                "created_at": "2015-06-12T21:12:14.138Z",
+                "id": "557b4b2e59949a12b97366cb"
+            },
+            "distributor_id": 354504053
+        },
+        {
+            "virtual_currency_awarded": 10,
+            "app_name": "fav_app",
+            "virtual_currency_reward_max": 9223372036854776000,
+            "app_id": 596930727,
+            "ad_provider_eCPM": 20,
+            "device_type": "iPhone Simulator",
+            "generated_config": {
+                "appConfigRefreshInterval": 0,
+                "appName": "fav_app",
+                "analyticsConfiguration": {
+                    "analyticsPostUrl": "https://api.keen.io/3.0/projects/550b015646f9a745baaab265",
+                    "analyticsWriteKey": "8f1c4831666e4bdc64b81bf430365590ebc15c73ea00bc3e9d61e8b7b3918b7a3728892e625ff34b77a1a86d7abd42c6c481870f92713a107061e4cc9f0c7a4872f1ac1c90e01644ed5281fcc92d7914634327c23b9a2bcc28c808b338265c32ce730c52f93b78275b36432ab3a4cf22"
+                },
+                "distributorName": "jun group",
+                "appID": 596930727,
+                "generationNumber": 38,
+                "logFullConfig": true,
+                "errorReportingConfiguration": {
+                    "errorReportingPostUrl": "https://api.keen.io/3.0/projects/550b015646f9a745baaab265",
+                    "errorReportingWriteKey": "8f1c4831666e4bdc64b81bf430365590ebc15c73ea00bc3e9d61e8b7b3918b7a3728892e625ff34b77a1a86d7abd42c6c481870f92713a107061e4cc9f0c7a4872f1ac1c90e01644ed5281fcc92d7914634327c23b9a2bcc28c808b338265c32ce730c52f93b78275b36432ab3a4cf22"
+                },
+                "rewardTimeout": 10,
+                "virtualCurrency": {
+                    "roundUp": true,
+                    "exchangeRate": 100,
+                    "rewardMin": 10,
+                    "rewardMax": 9223372036854776000,
+                    "name": "gold"
+                },
+                "canShowAdTimeout": 10,
+                "distributorID": 354504053,
+                "adProviderConfigurations": [
+                    {
+                        "providerName": "HyprMarketplace",
+                        "providerID": 2,
+                        "eCPM": 20,
+                        "distributorID": "10000169",
+                        "sdkBlacklistRegex": ".^",
+                        "propertyID": "fav_app"
+                    }
+                ]
+            },
+            "connection_type": "WIFI",
+            "device_unique_id": "F7AA3159-9306-4761-B54E-A2E7A188C3BE",
+            "ad_provider_id": 2,
+            "virtual_currency_reward_min": 10,
+            "virtual_currency_round_up": true,
+            "sdk_version": 1,
+            "platform_version": "8.3",
+            "platform": "iPhone OS",
+            "ad_provider_sdk_version": "35",
+            "ip_geo_info": {
+                "province": null,
+                "city": null,
+                "postal_code": null,
+                "continent": "North America",
+                "country": "United States"
+            },
+            "ad_provider_name": "HyprMarketplace",
+            "adapter_api_version": 1,
+            "ad_provider_adapter_version": 1,
+            "device_locale": "en",
+            "virtual_currency_name": "gold",
+            "virtual_currency_exchange_rate": 100,
+            "is_production": false,
+            "bundle_id": "com.jungroup.SampleApp",
+            "config_from_server": {
+                "appConfigRefreshInterval": 0,
+                "appName": "fav_app",
+                "analyticsConfiguration": {
+                    "analyticsPostUrl": "https://api.keen.io/3.0/projects/550b015646f9a745baaab265",
+                    "analyticsWriteKey": "8f1c4831666e4bdc64b81bf430365590ebc15c73ea00bc3e9d61e8b7b3918b7a3728892e625ff34b77a1a86d7abd42c6c481870f92713a107061e4cc9f0c7a4872f1ac1c90e01644ed5281fcc92d7914634327c23b9a2bcc28c808b338265c32ce730c52f93b78275b36432ab3a4cf22"
+                },
+                "distributorName": "jun group",
+                "canShowAdTimeout": 10,
+                "generationNumber": 38,
+                "logFullConfig": true,
+                "paused": false,
+                "errorReportingConfiguration": {
+                    "errorReportingPostUrl": "https://api.keen.io/3.0/projects/550b015646f9a745baaab265",
+                    "errorReportingWriteKey": "8f1c4831666e4bdc64b81bf430365590ebc15c73ea00bc3e9d61e8b7b3918b7a3728892e625ff34b77a1a86d7abd42c6c481870f92713a107061e4cc9f0c7a4872f1ac1c90e01644ed5281fcc92d7914634327c23b9a2bcc28c808b338265c32ce730c52f93b78275b36432ab3a4cf22"
+                },
+                "rewardTimeout": 10,
+                "adProviderBelowRewardThreshold": [],
+                "virtualCurrency": {
+                    "roundUp": true,
+                    "exchangeRate": 100,
+                    "rewardMin": 10,
+                    "rewardMax": null,
+                    "name": "gold"
+                },
+                "appID": 596930727,
+                "distributorID": 354504053,
+                "adProviderConfigurations": [
+                    {
+                        "providerName": "HyprMarketplace",
+                        "providerID": 2,
+                        "eCPM": 20,
+                        "distributorID": "10000169",
+                        "sdkBlacklistRegex": ".^",
+                        "propertyID": "fav_app"
+                    }
+                ],
+                "testMode": false
+            },
+            "ip_address": "69.74.2.58",
+            "distributor_name": "jun group",
+            "generation_number": 38,
+            "keen": {
+                "timestamp": "2015-06-12T21:13:06.560Z",
+                "created_at": "2015-06-12T21:13:06.560Z",
+                "id": "557b4b62d2eaaa2e5c6cce61"
+            },
+            "distributor_id": 354504053
+        }
+    ]
+}

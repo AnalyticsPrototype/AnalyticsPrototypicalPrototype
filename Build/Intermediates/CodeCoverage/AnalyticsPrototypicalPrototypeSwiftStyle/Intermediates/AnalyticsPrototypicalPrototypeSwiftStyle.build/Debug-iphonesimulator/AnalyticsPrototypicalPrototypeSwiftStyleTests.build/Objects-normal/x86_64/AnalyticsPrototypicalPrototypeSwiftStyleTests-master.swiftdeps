@@ -1,4 +1,6 @@
 version: "Apple Swift version 2.0 (swiftlang-700.0.38.1 clang-700.0.53)"
-options: "6c0d85696df1f78d9eebd7331e376ca8"
+options: "9fee2ab001c9631f14b934e01f60455a"
 inputs: 
+- "/Users/krafferty/Documents/JunGroup/AnalyticsPrototypicalPrototype/AnalyticsPrototypicalPrototypeSwiftStyle/View Controllers/ViewController.swift"
+- "/Users/krafferty/Documents/JunGroup/AnalyticsPrototypicalPrototype/AnalyticsPrototypicalPrototypeSwiftStyle/Web Service API/JUNWebServices.swift"
 - "/Users/krafferty/Documents/JunGroup/AnalyticsPrototypicalPrototype/AnalyticsPrototypicalPrototypeSwiftStyleTests/AnalyticsPrototypicalPrototypeSwiftStyleTests.swift"

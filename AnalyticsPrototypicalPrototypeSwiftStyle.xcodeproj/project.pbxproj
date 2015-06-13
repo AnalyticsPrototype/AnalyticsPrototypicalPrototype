@@ -16,6 +16,9 @@
 		36A0E4EB1B279DE700A47D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4EA1B279DE700A47D7C /* AppDelegate.swift */; };
 		36A0E4ED1B279DF200A47D7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4EC1B279DF200A47D7C /* ViewController.swift */; };
 		36A0E4F11B279E6E00A47D7C /* JUNWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4F01B279E6E00A47D7C /* JUNWebServices.swift */; };
+		36C237561B2B9A9600B311D2 /* ad_completedJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 36C237551B2B9A9600B311D2 /* ad_completedJSON.json */; };
+		36C237581B2BA32400B311D2 /* JUNWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4F01B279E6E00A47D7C /* JUNWebServices.swift */; };
+		36C237591B2BA40F00B311D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E4EC1B279DF200A47D7C /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,7 @@
 		36A0E4EA1B279DE700A47D7C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Application Delegate/AppDelegate.swift"; sourceTree = "<group>"; };
 		36A0E4EC1B279DF200A47D7C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "View Controllers/ViewController.swift"; sourceTree = "<group>"; };
 		36A0E4F01B279E6E00A47D7C /* JUNWebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JUNWebServices.swift; path = "Web Service API/JUNWebServices.swift"; sourceTree = "<group>"; };
+		36C237551B2B9A9600B311D2 /* ad_completedJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ad_completedJSON.json; path = "Simulated JSON/ad_completedJSON.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				36A0E4EE1B279E0800A47D7C /* Web Service API */,
 				36B05E071B27E8EC00FB3376 /* Bridging Header */,
 				36A0E4E61B279D8300A47D7C /* Storyboards */,
+				36C237541B2B9A7000B311D2 /* Simulated JSON */,
 				36A0E4BF1B279D6F00A47D7C /* Assets.xcassets */,
 				36A0E4C41B279D6F00A47D7C /* Info.plist */,
 			);
@@ -190,6 +195,14 @@
 			name = "Bridging Header";
 			sourceTree = "<group>";
 		};
+		36C237541B2B9A7000B311D2 /* Simulated JSON */ = {
+			isa = PBXGroup;
+			children = (
+				36C237551B2B9A9600B311D2 /* ad_completedJSON.json */,
+			);
+			name = "Simulated JSON";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,8 +227,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36A0E4E01B279D6F00A47D7C /* Build configuration list for PBXNativeTarget "AnalyticsPrototypicalPrototypeSwiftStyleTests" */;
 			buildPhases = (
-				36A0E4C51B279D6F00A47D7C /* Sources */,
 				36A0E4C61B279D6F00A47D7C /* Frameworks */,
+				36A0E4C51B279D6F00A47D7C /* Sources */,
 				36A0E4C71B279D6F00A47D7C /* Resources */,
 			);
 			buildRules = (
@@ -294,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C237561B2B9A9600B311D2 /* ad_completedJSON.json in Resources */,
 				36A0E4C31B279D6F00A47D7C /* LaunchScreen.storyboard in Resources */,
 				36A0E4C01B279D6F00A47D7C /* Assets.xcassets in Resources */,
 				36A0E4BE1B279D6F00A47D7C /* Main.storyboard in Resources */,
@@ -331,6 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C237591B2BA40F00B311D2 /* ViewController.swift in Sources */,
+				36C237581B2BA32400B311D2 /* JUNWebServices.swift in Sources */,
 				36A0E4CE1B279D6F00A47D7C /* AnalyticsPrototypicalPrototypeSwiftStyleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

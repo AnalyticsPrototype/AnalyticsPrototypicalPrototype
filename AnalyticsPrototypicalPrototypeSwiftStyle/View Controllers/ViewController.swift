@@ -54,48 +54,7 @@ class ViewController: UIViewController {
     
     @IBAction func onFetchInformationButtonPressed(sender: AnyObject) {
         
-        JUNWebServices().GETAdCompletedInformation {(data: NSData) -> Void in
-            
-            do {
-                
-                let JSON = try NSJSONSerialization.JSONObjectWithData(data, options: [])
-                
-                guard let JSONArray: NSArray = JSON["result"] as? NSArray else {
-                    
-                    throw JSONError.JSONArrayError
-                }
-                
-                var sum: NSInteger = 0
-                var averageeCPM: NSInteger = 0
-                
-                for var index = 0; index < JSONArray.count; ++index {
-                    
-                    guard let dictionary: NSDictionary = JSONArray[index] as? NSDictionary else {
-                        
-                        throw JSONError.JSONDictionaryError
-                    }
-                    
-                    guard let number: NSNumber = dictionary["ad_provider_eCPM"] as? NSNumber else {
-                        
-                        throw JSONError.JSONDictionaryError
-                    }
-                    
-                    sum += number.integerValue
-                }
-                
-                averageeCPM = sum / JSONArray.count
-                
-                // Update the eCPM UILabel back on the main thread
-                dispatch_async(dispatch_get_main_queue()) {
-                    
-                    self.averageeCPMLabel.text = "\(averageeCPM)"
-                }
-                
-            } catch {
-                
-                print("An error has occurred parsing the JSON NSData.");
-            }
-        }
+        self.retrieveAdCompletedInformation()
     }
     
     @IBAction func onStartDateBeginEditing(sender: UITextField) {
@@ -144,5 +103,62 @@ class ViewController: UIViewController {
         dateformatter.dateStyle = NSDateFormatterStyle.MediumStyle
         
         self.endDateTextField.text = dateformatter.stringFromDate(sender.date)
+    }
+    
+    // mark -
+    // mark Helper Methods
+    // mark -
+    
+    func retrieveAdCompletedInformation() {
+        
+        JUNWebServices().GETAdCompletedInformation {(data: NSData) -> Void in
+            
+            self.parseJSONDataForAdCompleted(data)
+        }
+    }
+    
+    func parseJSONDataForAdCompleted(data: NSData) {
+        
+        do {
+            
+            let JSON = try NSJSONSerialization.JSONObjectWithData(data, options: [])
+            
+            print("JSON data - \(JSON)")
+            
+            guard let JSONArray: NSArray = JSON["result"] as? NSArray else {
+                
+                throw JSONError.JSONArrayError
+            }
+            
+            var sum: NSInteger = 0
+            var averageeCPM: NSInteger = 0
+            
+            for var index = 0; index < JSONArray.count; ++index {
+                
+                guard let dictionary: NSDictionary = JSONArray[index] as? NSDictionary else {
+                    
+                    throw JSONError.JSONDictionaryError
+                }
+                
+                guard let number: NSNumber = dictionary["ad_provider_eCPM"] as? NSNumber else {
+                    
+                    throw JSONError.JSONDictionaryError
+                }
+                
+                sum += number.integerValue
+            }
+            
+            averageeCPM = sum / JSONArray.count
+            
+            // Update the eCPM UILabel back on the main thread
+            dispatch_async(dispatch_get_main_queue()) {
+                
+                self.averageeCPMLabel.text = "\(averageeCPM)"
+            }
+            
+        } catch {
+            
+            print("An error has occurred parsing the JSON NSData.");
+        }
     }
 }

@@ -127,6 +127,7 @@ SWIFT_CLASS("_TtC40AnalyticsPrototypicalPrototypeSwiftStyle14ViewController")
 - (IBAction)onEndDateBeginEditing:(UITextField * __nonnull)sender;
 - (void)startDatePickerValueChanged:(UIDatePicker * __nonnull)sender;
 - (void)endDatePickerValueChanged:(UIDatePicker * __nonnull)sender;
+- (void)retrieveAdCompletedInformation;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
