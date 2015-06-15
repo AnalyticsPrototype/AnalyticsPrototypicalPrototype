@@ -12,35 +12,38 @@ class ViewController: UIViewController {
     
     enum JSONError: ErrorType {
         
-        case JSONParsingError
-        
         case JSONArrayError
+        
+        case JSONParsingError
         
         case JSONDictionaryError
         
+        case JSONEmptyArrayError
+        
+        case JSONSerializaionError
+        
     }
     
-    // mark -
-    // mark UILabel Properties
-    // mark -
+    // MARK: -
+    // MARK: UILabel Properties
+    // MARK: -
     
     @IBOutlet weak var averageeCPMLabel: UILabel!
     
-    // mark -
-    // mark UITextField Properties
-    // mark -
+    // MARK: -
+    // MARK: UITextField Properties
+    // MARK: -
     
     @IBOutlet weak var startDateTextField: UITextField!
     @IBOutlet weak var endDateTextField: UITextField!
     
-    // mark -
-    // mark View Life Cycle
-    // mark -
+    // MARK: -
+    // MARK: View Life Cycle
+    // MARK: -
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,9 +51,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    // mark -
-    // mark IBAction Methods
-    // mark -
+    // MARK: -
+    // MARK: IBAction Methods
+    // MARK: -
     
     @IBAction func onFetchInformationButtonPressed(sender: AnyObject) {
         
@@ -83,9 +86,9 @@ class ViewController: UIViewController {
         datePickerView.addTarget(self, action: Selector("endDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
     }
     
-    // mark -
-    // mark Selector Methods
-    // mark -
+    // MARK: -
+    // MARK: Selector Methods
+    // MARK: -
     
     func startDatePickerValueChanged(sender: UIDatePicker) {
         
@@ -105,9 +108,9 @@ class ViewController: UIViewController {
         self.endDateTextField.text = dateformatter.stringFromDate(sender.date)
     }
     
-    // mark -
-    // mark Helper Methods
-    // mark -
+    // MARK: -
+    // MARK: Helper Methods
+    // MARK: -
     
     func retrieveAdCompletedInformation() {
         
@@ -123,11 +126,25 @@ class ViewController: UIViewController {
             
             let JSON = try NSJSONSerialization.JSONObjectWithData(data, options: [])
             
-            print("JSON data - \(JSON)")
+//            print("JSON data - \(JSON)")
+            
+            /*
+             *
+             * Note: A compiler warning will appear when running XCUITests stating "Cast from
+             *       'XCUIElement' to unrelated type '' always fails. This has been experienced
+             *       by another developer who attended WWDC 2015 an has filed an open radar issue
+             *       which can be seen here: http://www.openradar.me/21349340
+             *
+             */
             
             guard let JSONArray: NSArray = JSON["result"] as? NSArray else {
                 
-                throw JSONError.JSONArrayError
+                throw JSONError.JSONSerializaionError
+            }
+            
+            if JSONArray.count <= 0 {
+                
+                throw JSONError.JSONEmptyArrayError
             }
             
             var sum: NSInteger = 0
@@ -137,7 +154,7 @@ class ViewController: UIViewController {
                 
                 guard let dictionary: NSDictionary = JSONArray[index] as? NSDictionary else {
                     
-                    throw JSONError.JSONDictionaryError
+                    throw JSONError.JSONArrayError
                 }
                 
                 guard let number: NSNumber = dictionary["ad_provider_eCPM"] as? NSNumber else {
@@ -156,9 +173,29 @@ class ViewController: UIViewController {
                 self.averageeCPMLabel.text = "\(averageeCPM)"
             }
             
-        } catch {
+        } catch JSONError.JSONArrayError {
+            
+            print("An error has occurred accessing the NSArray object.");
+            
+        } catch JSONError.JSONParsingError {
             
             print("An error has occurred parsing the JSON NSData.");
+            
+        } catch JSONError.JSONDictionaryError {
+            
+            print("An error has occurred accessing the NSDictionary object.");
+            
+        } catch JSONError.JSONEmptyArrayError {
+            
+            print("An error has occured parsing the JSON NSData, an empty NSArray object was encountered.")
+            
+        } catch JSONError.JSONSerializaionError {
+            
+            print("An error has occurred accessing the Foundation object returned from the serialized JSON data.");
+            
+        } catch {
+            
+            print("An unknown error has occurred parsing the JSON NSData.");
         }
     }
 }
